@@ -1,0 +1,123 @@
+{
+	"pages": [
+		{
+			"path": "pages/login/login",
+			"style": {
+				"navigationBarTitleText": "丹枫小程序",
+				"enablePullDownRefresh":false
+			}
+		}
+		,//pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/Home/index",
+			"style": {
+				"navigationBarTitleText": "首页",
+				"enablePullDownRefresh":true
+			}
+		}
+        ,{
+            "path" : "pages/404/404",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "页面未找到",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/Myinfo/Myinfo",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "我的",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+    ],
+	//分包
+	"subPackages":[{
+		"root":"subpages",
+		"pages":[{
+			"path":"home/Listenpract/Listenpract",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh":false
+			}
+		},{
+			"path":"pickteacher/pickteacher",
+			"style": {
+				"navigationBarTitleText": "筛选教师",
+				"enablePullDownRefresh":false
+			}
+		},{
+			"path":"pickteacher/picklanguage",
+			"style": {
+				"navigationBarTitleText": "语言选择",
+				"enablePullDownRefresh":false
+			}
+		},{
+			"path":"pickteacher/pickteaclass",
+			"style": {
+				"navigationBarTitleText": "教师类型",
+				"enablePullDownRefresh":false
+			}
+		},{
+			"path":"pickteacher/pickfrom",
+			"style": {
+				"navigationBarTitleText": "来自",
+				"enablePullDownRefresh":false
+			}
+		},{
+			"path":"teacherdetil/teacherdetil",
+			"style": {
+				"navigationBarTitleText": "教师",
+				"enablePullDownRefresh":false
+			}
+		},{
+			"path":"chats/chat",
+			"style": {
+				"navigationBarTitleText": "联系老师",
+				"enablePullDownRefresh":false
+			}
+		},{
+			"path":"preclasstime/preclasstime",
+			"style": {
+				"navigationBarTitleText": "选择课程",
+				"enablePullDownRefresh":false
+			}
+		},{
+			"path":"classdetil/classdetil",
+			"style": {
+				"navigationBarTitleText": "课程详情",
+				"enablePullDownRefresh":false
+			}
+		}]
+	}],
+	//分包预下载
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	},
+	"tabBar":{
+		"color":"#707070",
+		"selectedColor":"#1296db",
+		"borderStyle":"black",
+		"backgroundColor":"#FFFFFF",
+		"list":[{
+			"pagePath":"pages/Home/index",
+			"iconPath":"./static/Tabbar-icons/home.png",
+			"selectedIconPath":"static/Tabbar-icons/home-active.png",
+			"text":"首页"
+		},{
+			"pagePath":"pages/Myinfo/Myinfo",
+			"iconPath":"./static/Tabbar-icons/myinfo.png",
+			"selectedIconPath":"static/Tabbar-icons/myinfo-active.png",
+			"text":"我的"
+		}]
+	},
+	"easycom": {
+			"^u-(.*)": "uview-ui/components/u-$1/u-$1.vue"
+	}
+}
