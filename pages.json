@@ -97,6 +97,30 @@
 				"navigationBarTitleText": "我的信息",
 				"enablePullDownRefresh":false
 			}
+		},{
+			"path":"myinfo/dingdan",
+			"style": {
+				"navigationBarTitleText": "订单",
+				"enablePullDownRefresh":false
+			}
+		},{
+			"path":"myinfo/shoucang",
+			"style": {
+				"navigationBarTitleText": "收藏",
+				"enablePullDownRefresh":false
+			}
+		},{
+			"path":"myinfo/youhui",
+			"style": {
+				"navigationBarTitleText": "优惠",
+				"enablePullDownRefresh":false
+			}
+		},{
+			"path":"myinfo/xiaoxi",
+			"style": {
+				"navigationBarTitleText": "消息",
+				"enablePullDownRefresh":false
+			}
 		}]
 	}],
 	//分包预下载

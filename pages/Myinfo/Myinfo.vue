@@ -14,7 +14,22 @@
 				</view>
 			</view>
 			<view class="my_tips">
-				
+				<view class="dingdan itemx" @click="dingdanClick">
+					<image src="../../static/logo.png" mode=""></image>
+					<text>订单</text>
+				</view>
+				<view class="shoucang itemx" @click="shoucangClick">
+					<image src="../../static/logo.png" mode=""></image>
+					<text>收藏</text>
+				</view>
+				<view class="youhui itemx" @click="youhuiClick">
+					<image src="../../static/logo.png" mode=""></image>
+					<text>优惠</text>
+				</view>
+				<view class="xiaoxi itemx" @click="xiaoxiClick">
+					<image src="../../static/logo.png" mode=""></image>
+					<text>消息</text>
+				</view>
 			</view>
 			<view class="my_class">
 				
@@ -46,6 +61,26 @@
 			myinfoxiangq(){
 				uni.navigateTo({
 					url:"/subpages/myinfo/detail"
+				})
+			},
+			dingdanClick(){
+				uni.navigateTo({
+					url:"/subpages/myinfo/dingdan"
+				})
+			},
+			shoucangClick(){
+				uni.navigateTo({
+					url:"/subpages/myinfo/shoucang"
+				})
+			},
+			youhuiClick(){
+				uni.navigateTo({
+					url:"/subpages/myinfo/youhui"
+				})
+			},
+			xiaoxiClick(){
+				uni.navigateTo({
+					url:"/subpages/myinfo/xiaoxi"
 				})
 			}
 		}
@@ -106,6 +141,22 @@
 				margin: 20upx 0 20upx 0;
 				box-sizing: border-box;
 				border: 1upx solid black;
+				display: flex;
+				padding: 20upx;
+				.itemx{
+					flex: 1;
+					display: flex;
+					flex-direction: column;
+					justify-content: space-between;
+					align-items: center;
+					image{
+						width: 50%;
+						height: 60%;
+					}
+					text{
+						font-size: 25upx;
+					}
+				}
 			}
 			.my_class{
 				width: 100%;
